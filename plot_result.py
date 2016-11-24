@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import csv
 import numpy
+import Image
 
 reader = csv.reader(open("Results/y_out.csv", "rb"),delimiter = ',')
 x = list(reader)
@@ -21,5 +22,6 @@ plt.xlabel('Input')
 plt.legend()
 plt.title('Extreme Learning Machine')
 plt.grid(True)
-
+plt.savefig('ELM_Results.jpg')
 plt.show()
+
